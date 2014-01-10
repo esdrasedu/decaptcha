@@ -1,0 +1,23 @@
+{
+  "name": "decaptcha",
+  "version": "0.0.0",
+  "description": "Api for decaptcha, using humans",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:esdrasedu/decaptcha.git"
+  },
+  "author": "Esdras Eduardo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/esdrasedu/decaptcha/issues"
+  },
+  "dependencies": {
+    "express": "3.4.7",
+    "ejs": "*",
+    "socket.io": "0.9.16"
+  }
+}

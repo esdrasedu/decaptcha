@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Decaptcha">
+  <head>
+    <title>Decaptcha</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/javascripts/app.js"></script>
+    <link rel="stylesheet" href="/stylesheets/style.css"></link>
+  </head>
+  <body>
+    <div ng-controller="ViewController" ng-init="init('<%= key %>')">
+      <p ng-repeat="captcha in captchas"> 
+        <img ng-src="{{ captcha.img }}">
+        <input ng-model="captcha.response">
+        <input type="button" value="Send" ng-click="send(captcha)">
+      </p>
+    </div>
+  </body>
+</html>

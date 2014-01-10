@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Decaptcha">
+  <head>
+    <title>Decaptcha</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.js"></script>
+    <script src="/javascripts/app.js"></script>
+    <link rel="stylesheet" href="/stylesheets/style.css"></link>
+  </head>
+  <body>
+    <div ng-controller="IndexController">
+      <h1>Api para decaptcha usando humanos</h1>
+      <a href="#" ng-click="generate()">Gerar Key</a>
+      <div id="keys">Key: <a ng-href="/keys/{{key}}">{{ key }}</a></div>
+    </div>
+  </body>
+</html>
